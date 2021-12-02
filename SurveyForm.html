@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style type="text/css">
+		h1,p,form {
+			border: black 5px dotted;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row col-md-6 col-md-offset-4">
+			<div class="panel panel-primary">
+				<div class="panel-heading text-center">
+					<h1>Survey Form</h1>
+					<p>This is a general Public Survey about viewers preferance.
+						Fill the form accordingly that what you prefer watching shows
+						on Television OR you prefer Online Streaming.
+						And enter your favourite show/series in the next two sections...</p>
+				</div>
+				<div class="panel-body">
+					<form id="addsurvey" action="surveyform.php" method="POST">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" class="form-control" id="name" name="name"/>
+						</div>
+						<div class="form-group">
+							<label for="age">Age</label>
+							<input type="number" class="form-control" id="age" name="age"/>
+						</div>
+						<div class="form-group">
+							<label for="preference">Preference</label>
+							<div>
+								<label for="onlinestreaming" class="radio-inline"><input type="radio" name="preference" value="onlinestreaming" id="onlinestreaming">Online Streaming</label>	
+								<label for="tv" class="radio-inline"><input type="radio" name="preference" value="tv" id="tv">TV</label>					
+							</div>
+						<div class="form-group">
+							<label for="firstpreference">First Preference</label>
+							<input type="text" class="form-control" id="firstpreference" name="firstpreference"/>
+						</div>
+						<div class="form-group">
+							<label for="secondpreference">Second Preference</label>
+							<input type="text" class="form-control" id="secondpreference" name="secondpreference"/>
+						</div>
+						<input type="Submit" class="btn btn-primary" name="submit">
+					</form>
+				</div>
+				<div class="panel-footer text-right">
+					<small>&copy; Public Survey</small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
